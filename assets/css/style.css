@@ -46,11 +46,11 @@ body.wrong {
 
 .btn {
   --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50);
+  border: 1px solid red;
+  background-color: magenta;
   border-radius: 5px;
   padding: 5px 10px;
-  color: white;
+  color: black;
   outline: none;
 }
 
@@ -78,4 +78,8 @@ body.wrong {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hide {
+  display: none;
 }
