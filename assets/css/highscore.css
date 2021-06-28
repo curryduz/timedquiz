@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-content {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.high-scores h1 {
+font-size: 25px;
+font-weight: bold;
+}
+
+.high-scores ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.high-scores ul li {
+    background-color: pink;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.high-scores button {
+    background-color:rgb(241, 18, 156);
+    color: white;
+    padding: 10px;
+    border-color:rgb(241, 18, 156);
+    border-radius: 5px;
+    font-size: 18px;
+}

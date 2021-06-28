@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Fundamentals Quiz</title>
-    <meta http-equiv="X-UA-Compatibe" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-          <button class="btn">Answer 1</button>
-          <button class="btn">Answer 2</button>
-          <button class="btn">Answer 3</button>
-          <button class="btn">Answer 4</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+
+<body>
+    <header>
+        <a href="high-scores.html" class="high-score">View Scores</a>
+        <div class="time"></div>
+    </header>
+
+    <main class="page-content" id="page-content">
+        <div class="page-start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+            <button id="start">Start Quiz</button>
         </div>
-      </div>
-      <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-      </div>
-    </div>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+        <div class="quiz hide">
+            <h2 class="question"></h2>
+            <ul class="answers"></ul>
+            <div class="answer hide"></div>
+        </div>
+
+        <div class="end-quiz hide">
+            <h2>All Done!</h2>
+            <p></p>
+            <form>
+                <label>Enter Initials:</label>
+                <input type="text" id="username" />
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+	<script src="./assets/js/script.js"></script>
+</body>
 </html>
